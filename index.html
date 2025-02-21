@@ -1,45 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshata Sangwai's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Akshata Sangwai | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Akshata Sangwai</h1>
-    <p>Software Engineer | Distributed Systems | Backend Developer</p>
+  <header id="header">
+    <img src="images/profile.jpeg" alt="Akshata Sangwai" class="profile-photo">
+    <div class="header-content">
+      <p>Hi there, I am</p>
+      <h1>Akshata Sangwai</h1>
+      
+      <a href="https://www.linkedin.com/in/akshatasangwai/" target="_blank" class="resume-btn">
+        LinkedIn
+        <img src="icons/linkedin.svg" alt="LinkedIn" class="linkedin-icon">
+      </a>
+    </div>
   </header>
+  
+  
+  
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a href="#header">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#footer">Contact</a></li>
     </ul>
   </nav>
-  <main>
+
+  <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p>I am passionate about distributed systems, backend development, and system design. With experience in cryptographic systems, microservices, and cloud technologies, I aim to build scalable and efficient software solutions.</p>
+      <p>I am a passionate software engineer who thrives on solving complex system challenges by designing efficient, scalable solutions.</p>
+      <p>My journey started with a deep interest in math and logic, and today, I’m diving deep into computer science. I have a particular interest in Distributed Systems and Neural Networks which has shaped my Master's at UMass.</p>
+      <p>Having worked at three startups early in my career, I have realized how important it is to really think things through when building something. It's all about considering the impact of the solution and how it fits into the bigger picture.</p>
+      <p>I'm always eager to learn, collaborate, and build tech that makes a difference.  Let's connect!</p>
+      
+      <a href="https://drive.google.com/file/d/1GSGGvnB9yG_SyMfiwXmc53SwBmB-i3Xe/view?usp=sharing" class="resume-btn" target="_blank">Resume</a>
     </section>
-    <section id="projects">
+
+    
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>CRYPTCUBE</h3>
+            <p>SWE Intern | May 2024 - Jan 2025</p>
+            <p>Designed and developed 10+ synchronous and asynchronous services using Spring Boot, Lambda, and Kafka in an event-driven
+              system, deploying them as Debian packages for seamless lifecycle management in a Service-Oriented Architecture.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>ADVANCED NETWORK SYSTEMS RESEARCH LAB</h3>
+            <p>Research Asst. | Feb. 2024 – Aug. 2024</p>
+            <p>Implemented Eventual, Causal, and PRAM Consistency using a DAG-based asynchronous coordination protocol with vector clocks,
+              utilizing NIO for packet transfer and Apache Ant for backend development.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>UNBOX ROBOTICS</h3>
+            <p>SWE Intern | July 2022 – March 2023</p>
+            <p>Contributed to the backend development for the robots by helping build 3 services using ROS2, setting up a ROS1-ROS2 bridge, and refactoring 2 modules from ROS1 to ROS2.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>CODEMISCHIEF SOLUTIONS</h3>
+            <p>SWE Intern | Dec. 2021 – Feb. 2022</p>
+            <p>Created RESTful APIs with Django, implemented unit and integration tests, and secured them using JWT Tokens for authentication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="projects" class="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>XDN Project:</strong> Extended CDN capabilities for stateful applications, researched consistency models, and implemented coordination protocols.</li>
-        <li><strong>NEFTX:</strong> An NFT marketplace for trading digital assets, utilizing IPFS and Polygon.</li>
-        <li><strong>OS-Manager:</strong> A custom lightweight operating system for embedded systems with real-time processing needs.</li>
-      </ul>
+      <div class="project-card">
+        <div class="content">
+          <h3>Knowledge Distillation</h3>
+          <p>Goal was to create a custom model that surpasses the baseline accuracy of existing designs by combining various established methods and architectures within the knowledge distillation framework.</p>
+        </div>
+        <img src="images/kd.jpg" alt="XDN Project">
+      </div>
+      <div class="project-card">
+        <div class="content">
+          <h3>DistStore: A Distributed Storage System</h3>
+          <p>Built a fault-tolerant replicated datastore application using Java and Apache Zookeeper for coordination. Ensured consistent read-write operations for over 1000 requests in a distributed server-side setup with multiple multithreaded clients.</p>
+        </div>
+        <img src="images/ds.png" alt="NEFTX">
+      </div>
+      <div class="project-card">
+        <div class="content">
+          <h3>Barricading System</h3>
+          <p>Implemented a system that enabled communication between the robots and entry system creating a barricade using gRPC and proto-buffs for message transfer.</p>
+        </div>
+        <img src="images/ur.jpeg" alt="OS-Manager">
+      </div>
+      <div class="project-card">
+        <div class="content">
+          <h3>Openstore</h3>
+          <p>Open Store is a NFT marketplace where traders can buy and sell NFT tokens through the usage of ethers and track the ownership of digital assets.</p>
+        </div>
+        <img src="images/os.png" alt="OS-Manager">
+      </div>
+      <a href="https://www.linkedin.com/in/akshatasangwai/" target="_blank" class="resume-btn">
+        All Projects
+        <img src="icons/github.svg" alt="LinkedIn" class="linkedin-icon">
+      </a>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:akshata@example.com">akshata@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/akshatasangwai">github.com/akshatasangwai</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/akshatasangwai/">linkedin.com/in/akshatasangwai</a></p>
+
+    <section id="skills">
+      <div class="skills-icons">
+        <!-- New technologies -->
+        <a href="https://www.java.com/" target="_blank">
+          <img src="icons/java.svg" alt="Java">
+        </a>
+        <a href="https://www.python.org/" target="_blank">
+          <img src="icons/python.svg" alt="Python">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+          <img src="icons/c.svg" alt="C">
+        </a>
+        <a href="https://spring.io/projects/spring-boot" target="_blank">
+          <img src="icons/springboot.svg" alt="Spring Boot">
+        </a>
+        <a href="https://maven.apache.org/" target="_blank">
+          <img src="icons/maven.svg" alt="Maven">
+        </a>
+        <a href="https://pytorch.org/" target="_blank">
+          <img src="icons/pytorch.svg" alt="PyTorch">
+        </a>
+        <a href="https://www.djangoproject.com/" target="_blank">
+          <img src="icons/django.svg" alt="Django">
+        </a>
+        <a href="https://www.mysql.com/" target="_blank">
+          <img src="icons/mysql.svg" alt="SQL">
+        </a>
+        <a href="https://aws.amazon.com/dynamodb/" target="_blank">
+          <img src="icons/aws.svg" alt="AWS">
+        </a>
+        <a href="https://git-scm.com/" target="_blank">
+          <img src="icons/git.svg" alt="Git">
+        </a>
+        <a href="https://www.linux.org/" target="_blank">
+          <img src="icons/linux.svg" alt="Linux">
+        </a>   
+      </div> 
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Akshata Sangwai</p>
+  </div>
+   
+  <footer id="footer">
+    <div class="contact-links">
+      <a href="mailto:akshata@example.com" target="_blank">
+        <img src="icons/gmail.svg" alt="Email">
+      </a>
+      <a href="https://github.com/akshatasangwai" target="_blank">
+        <img src="icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://leetcode.com/akshatasangwai" target="_blank">
+        <img src="icons/leetcode.svg" alt="LeetCode">
+      </a>
+      <a href="https://www.linkedin.com/in/akshatasangwai/" target="_blank">
+        <img src="icons/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    
   </footer>
+
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

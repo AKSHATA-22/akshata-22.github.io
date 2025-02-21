@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    padding-top: 60px;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc; /* Soft professional color */
+    color: #333; /* High readability */
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    color: white;
+    padding: 50px 50px;
+    text-align: left;
+    margin-top: 80px; /* Push header down so it's not hidden under navbar */
+}
+header p {
+    font-size: 1.5rem; /* Slightly larger font size for the title */
+    font-weight: 400; /* Normal weight */
+    margin: 10px 0;
+}
+
+header h1{
+    font-size: 4rem;
+    font-weight: 700; /* Make it bold */
+    margin: 0;
+}
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Add some space between the button and the icon */
+  }
+  
+  .linkedin-icon {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .linkedin-icon:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+  }
+  
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    padding-left: 20px; /* Adjust space on the left */
+}
+
+.profile-photo {
+    width: 200px; /* Profile photo size */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px; /* Increased space */
+    border: 4px solid white;
+}
+
+nav {
+    position: fixed;
+    top: 0; /* Keep navbar visible */
+    left: 0;
+    width: 100%;
+    background: #000000; /* Same as header */
+    padding: 15px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for visibility */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease-out, letter-spacing 0.3s ease-out, color 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    color: #f4f4f1; /* Gold color to make it pop */
+    transform: scale(1.08); /* Subtle scaling */
+    letter-spacing: 1px; /* Slight letter spacing for a dynamic feel */
+}
+
+
+.container {
+    width: 100%; /* Allow it to take full width */
+    max-width: none; /* Remove width constraint */
+    padding: 0; /* Let sections handle padding */
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+section { /* Ensure section takes full viewport width */
+    padding: 80px 10vw; /* Increase padding for content readability */
+    margin: 0; /* Remove unwanted margins */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f7fc; /* Light shade */
+}
+
+section:nth-child(even) {
+    background-color: #eaebed; /* Slightly darker shade */
+}
+
+
+h2 {
+    font-size: 2.2rem; /* Increased size */
+    color: #474848;
+    font-weight: 700; /* Make it bold */
+    margin-bottom: 20px; /* Add space below the heading */
+    font-family: 'Merriweather', serif;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-card {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    transition: transform 0.3s ease-out;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card img {
+    width: 200px; /* Fixed width for a square */
+    height: 200px; /* Fixed height for a square */
+    object-fit: cover;
+    border-radius: 10px; /* Optional: round corners of the square */
+    margin-left: 20px; /* Space between text and image */
+}
+
+.project-card .content {
+    padding: 15px;
+    width: calc(100% - 220px); /* Adjust width to accommodate the image */
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: #135bea;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f7fc;
+    color: white;
+    margin-top: 20px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Spacing between the icons */
+}
+.contact-links a {
+    display: block;
+}
+.contact-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+.contact-links a:hover img {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Ensures icons wrap if space is tight */
+}
+
+  
+.skills-icons a {
+    display: block;
+}
+
+.skills-icons img {
+    width: 70px;  /* Adjust the size of the icons */
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.skills-icons a:hover img {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+#experience {
+    margin: 40px 0;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  /* Vertical line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #080100; /* Vertical line color */
+    transform: translateX(-50%);
+  }
+  
+  .timeline-content {
+    position: relative;
+    padding: 30px; /* Increase padding for a bigger feel */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Increase the width of the cards */
+    margin-left: 20px;
+}
+
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 50%;
+    margin-left: -20px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  .timeline-content h3 {
+    color: #135bea;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-content p {
+    margin: 5px 0;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .resume-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /* Align text and icon in a row */
+    background: #da7af2;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-out;
+    width: auto; /* Allow the button to fit the content width */
+    max-width: 180px; /* Set a maximum width */
+    /* margin: 0 auto; */
+  }
+  
+  .resume-btn:hover {
+    background: #00d5ff;
+    transform: scale(1.05);
+  }
+  
+  .linkedin-icon {
+    width: 20px;  /* Adjust size to fit within button */
+    height: 20px;
+    margin-left: 10px;  /* Add space between text and icon */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resume-btn:hover .linkedin-icon {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+  }
+  
+
+ 
