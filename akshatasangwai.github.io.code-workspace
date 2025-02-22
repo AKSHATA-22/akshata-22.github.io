@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "akshatasangwai.github.io",
+			"path": "."
+		},
+		{
+			"name": "icons",
+			"path": "../../../../Desktop/icons"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "akshatasangwai.github.io"
+	}
+}
